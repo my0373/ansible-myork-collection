@@ -23185,7 +23185,9 @@ def getMacMFRtext(mac):
 """ 
 
     # Initialise the manufacturer dictionary with each of
-    # the MAC adddress prefixes as the key  
+    # the MAC adddress prefixes as the key.
+
+    # There is some FILTHY data mi
     mfrlist = {}
     for line in mfrtext.splitlines():
         line = line.strip()
