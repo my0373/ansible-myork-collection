@@ -18,6 +18,12 @@
     scope: global
     value: "{{ GIT_EMAIL }}"
 
+- name: Set the git autosetupremote
+  community.general.git_config:
+    name: push.autoSetupRemote
+    scope: global
+    value: "{{ GIT_AutoSetupRemote }}"
+
 - name: Set the git editor config
   community.general.git_config:
     name: core.editor
